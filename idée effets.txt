@@ -1,0 +1,25 @@
+
+Techno a utiliser pour ça : 
+
+https://www.litespeedtech.com/products/litespeed-web-server/lsws-pricing <= hebergeur (?)
+- Gsap
+- Bootstrap (maybe) 
+
+
+
+
+---------------------------
+
+
+
+https://www.thomasbonometti.fr/ <= Effet de transition TROP NRV
+
+https://ryota-sato.com/images/noise.gif <= background noise.gif ( voir ici pour réglages : https://ryota-sato.com/ )
+
+https://www.youtube.com/watch?v=jnnUiwhQZpc <= scroll horizontal ( designer du web tuto)
+
+https://appellemoipapa.fr/ <= affichage des projets 
+
+https://emanuelemilella.com/about <= texte défilant
+
+https://adrienlaurent.fr/ <= mail copy / past

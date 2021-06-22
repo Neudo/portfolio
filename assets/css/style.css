@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "BespokeStencil-Variable";
+  src: url("../fonts/BespokeStencil-Variable.woff2") format("woff2"),
+    url("../fonts/BespokeStencil-Variable.woff") format("woff"),
+    url("../fonts/BespokeStencil-Variable.ttf") format("truetype");
+  font-weight: 300 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KENOKY Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("KENOKY Light"), url("../fonts/KenokyLight.ttf") format("woff");
+}
+
+body {
+  font-family: "KENOKY Light";
+}
+
+.bg-noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.02;
+  z-index: 1000;
+  pointer-events: none;
+  background-image: url(../img/noise.gif);
+}
+
+.container--presentation {
+  background-color: black;
+  height: 100vh;
+}
+
+.container--about,
+.container--works {
+  height: 100vh;
+  background-color: #eaeaea;
+}
+
+.nav-bar {
+  display: flex;
+  width: 57%;
+  padding: 20px;
+  color: white;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 50%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.right {
+  position: fixed;
+  left: 87vw;
+}
+
+.container--name {
+  margin-top: 9%;
+}
+
+.name {
+  color: white;
+  text-align: center;
+  font-size: 6vw;
+  line-height: 5.5rem;
+}
+
+.about h3 {
+  font-family: "BespokeStencil-Variable";
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 9%;
+}
