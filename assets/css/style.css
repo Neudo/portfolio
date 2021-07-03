@@ -57,6 +57,11 @@ body {
 
 .logo img {
   width: 50%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.logo img:hover {
+  transform: rotate(360deg);
 }
 
 a {
@@ -134,7 +139,7 @@ h2 {
 .social {
   display: flex;
   flex-direction: column;
-  width: 7%;
+  width: 17%;
   margin-top: -128px;
 }
 
@@ -156,4 +161,75 @@ h2 {
 
 .social a {
   color: black;
+}
+
+.slide-link {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-link span {
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+
+.slide-link span:nth-child(2) {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 100%;
+}
+
+.mail {
+  width: 56%;
+}
+
+.github {
+  width: 76%;
+}
+
+.slide-link:hover span {
+  transform: translateX(-100%);
+}
+
+.horizontal {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: gray;
+}
+
+.horizontal h1 {
+  justify-content: center;
+  margin: auto;
+}
+
+.bg-black {
+  background: black;
+}
+
+.bg-white {
+  background: white;
+}
+
+.container--works {
+  display: flex;
+  width: 400vw;
+  height: 100vh;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.container--horizontal {
+  width: 100vh;
+  height: 100vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: auto;
 }
