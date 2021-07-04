@@ -27,7 +27,7 @@ gsap.to(sections, {
     trigger: ".container--horizontal",
     pin: true,
     start: "top",
-    markers: true,
+    markers: false,
     scrub: 1,
     end: () =>
       "+=" + document.querySelector(".container--works").offsetWidth / 4,
@@ -44,4 +44,27 @@ gsap.to(".projects", {
   },
   x: 100,
   opacity: 1,
+});
+
+gsap.to(".img-work", {
+  scrollTrigger: {
+    trigger: ".horizontal",
+    start: "top+=10%",
+    end: "bottom .page1",
+    scrub: true,
+    markers: false,
+  },
+  scale: 1.6,
+  x: 200,
+});
+
+gsap.to(".bloc-infos-work", {
+  scrollTrigger: {
+    trigger: ".horizontal",
+    start: "top",
+    end: "bottom-=20%",
+    scrub: true,
+    markers: false,
+  },
+  x: -500,
 });
