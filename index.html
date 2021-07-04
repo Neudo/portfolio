@@ -3,6 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/img/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/main.js" defer></script>
@@ -32,7 +57,7 @@
         </div>
       </div>
 
-      <div class="about">
+      <div class="scroll">
         <h3>Scroll</h3>
       </div>
     </div>
@@ -85,7 +110,7 @@
           ><span>LINKEDIN</span><span>LINKEDIN</span></a
         >
         <a
-          class="slide-link mail"
+          class="slide-link mail pro"
           href="mailto:bassalair.quentin@gmail.com"
           target="_blank"
           ><span>MAIL</span><span>MAIL</span></a
@@ -95,12 +120,35 @@
     <div class="container--horizontal">
       <div class="container--works">
         <div class="horizontal">
-          <h1>PROJETS</h1>
+          <h1 class="projects">PROJETS</h1>
         </div>
-        <div class="horizontal"><h2>test</h2></div>
-        <div class="horizontal"><h2>test</h2></div>
-        <div class="horizontal"><h2>test</h2></div>
+        <div class="horizontal">
+          <div class="bloc-infos-work">
+            <h2>AMP</h2>
+            <p class="desc-work">Blog macro photo</p>
+            <p class="what-use">PHP/SQL</p>
+          </div>
+          <a href="https://webstart-dev.ovh/~dv20bassalair/blog_photo/PHP/index.php" target="_blank"><img class="img-work" src="./assets/img/amp-pic.png" alt="image blog photo AMC" /></a>
+        </div>
+          <div class="horizontal">
+            <div class="bloc-infos-work">
+              <h2>ICONIKICKS</h2>
+              <p class="desc-work">Fake boutique en ligne</p>
+              <p class="what-use">HTML/CSS</p>
+          </div>
+          <a href="#"><img class="img-work2" src="./assets/img/ikonikicks.jpg" target="_blank" alt="" /></a>
+        </div>
+          <div class="horizontal">
+            <div class="bloc-infos-work">
+              <h2>EN COURS DE REALISATION</h2>
+              <p class="desc-work"></p>
+              <p class="what-use">In comming</p>
+            </div>
+            <a href="#"><img class="img-work2" src="./assets/img/comming-soon.jpg" target="_blank" alt="" /></a>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>

@@ -17,6 +17,7 @@
 
 body {
   font-family: "KENOKY Light";
+  background-color: #eaeaea;
 }
 
 .bg-noise::before {
@@ -26,7 +27,7 @@ body {
   width: 100vw;
   height: 100vh;
   content: "";
-  opacity: 0.02;
+  opacity: 0.03;
   z-index: 1000;
   pointer-events: none;
   background-image: url(../img/noise.gif);
@@ -37,14 +38,9 @@ body {
   height: 100vh;
 }
 
-.container--about,
-.container--works {
-  background-color: #eaeaea;
-}
-
 .nav-bar {
   display: flex;
-  width: 57%;
+  width: 52%;
   padding: 20px;
   color: white;
   justify-content: space-between;
@@ -52,11 +48,13 @@ body {
 
 .left {
   text-align: center;
-  line-height: 1.4rem;
+  line-height: 2rem;
+  padding: 20px;
+  font-size: 2.2rem;
 }
 
 .logo img {
-  width: 50%;
+  width: 80%;
   transition: transform 0.8s ease-in-out;
 }
 
@@ -88,17 +86,18 @@ a {
 .right {
   position: fixed;
   left: 87vw;
+  font-size: 2.2rem;
 }
 
 .container--name {
-  margin-top: 9%;
+  margin-top: 12%;
 }
 
 .name {
   color: white;
   text-align: center;
   font-size: 6vw;
-  line-height: 5.5rem;
+  line-height: 7.5rem;
 }
 
 h3,
@@ -109,10 +108,10 @@ h1 {
 h3 {
   text-align: center;
   font-size: 3vw;
-  margin-top: 9%;
+  margin-top: 15%;
 }
 
-.about h3 {
+.scroll h3 {
   color: white;
 }
 
@@ -126,6 +125,7 @@ h2 {
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
+  font-size: 3rem;
 }
 .skills,
 .social {
@@ -133,14 +133,16 @@ h2 {
 }
 
 .skills p {
-  line-height: 1.3rem;
+  line-height: 3.3rem;
+  font-size: 2.2rem;
 }
 
 .social {
   display: flex;
   flex-direction: column;
   width: 17%;
-  margin-top: -128px;
+  margin-top: -150px;
+  line-height: 2.5rem;
 }
 
 .container--me {
@@ -151,16 +153,13 @@ h2 {
   padding-top: 5vw;
   text-align: justify;
   font-family: chillax;
-  line-height: 1.1rem;
-  width: 55%;
-}
-
-.social {
-  line-height: 1.7rem;
+  width: 52%;
+  font-size: 2rem;
 }
 
 .social a {
   color: black;
+  font-size: 2rem;
 }
 
 .slide-link {
@@ -196,7 +195,7 @@ h2 {
   display: flex;
   height: 100vh;
   width: 100vw;
-  background: gray;
+  background-color: #eaeaea;
 }
 
 .horizontal h1 {
@@ -232,4 +231,43 @@ h2 {
 .main-wrapper {
   width: 100%;
   height: auto;
+}
+
+.projects {
+  opacity: 0;
+}
+
+.img-work {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 25%;
+  left: 40%;
+  display: inline-block;
+}
+
+.img-work2 {
+  width: 80%;
+  height: 50%;
+  position: relative;
+  top: 25%;
+  left: 80%;
+  display: block;
+}
+
+.bloc-infos-work {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  z-index: 99;
+  font-size: 3rem;
+  font-family: chillax;
+}
+
+.bloc-infos-work h2 {
+  font-family: "BespokeStencil-Variable";
+  font-size: 5rem;
+  text-align: start;
 }
