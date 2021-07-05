@@ -15,6 +15,8 @@ window.addEventListener("scroll", () => {
 
 // horizontal scroll
 
+var windowSize = window.matchMedia("(min-width");
+
 gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".container--works .horizontal");
@@ -66,5 +68,27 @@ gsap.to(".bloc-infos-work", {
     scrub: true,
     markers: false,
   },
-  x: -500,
+  x: 500,
+});
+
+gsap.to(".ml-650", {
+  scrollTrigger: {
+    trigger: ".presentation",
+    start: "top-=50%",
+    end: "middle-=15%",
+    scrub: true,
+    markers: true,
+  },
+  x: -810,
+});
+
+gsap.to(".my", {
+  scrollTrigger: {
+    trigger: ".presentation",
+    start: "top-=50%",
+    end: "middle+=25%",
+    scrub: true,
+    markers: false,
+  },
+  x: 50,
 });

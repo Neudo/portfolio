@@ -132,6 +132,10 @@ h2 {
   padding: 5vw;
 }
 
+.skills h2 {
+  text-align: initial;
+}
+
 .skills p {
   line-height: 3.3rem;
   font-size: 2.2rem;
@@ -237,6 +241,23 @@ h2 {
   opacity: 0;
 }
 
+.presentation h2 {
+  font-family: "KENOKY Light";
+  text-align: initial;
+  padding: 50px 0 0 0;
+  font-size: 6.5rem;
+}
+
+.ml-650 {
+  margin-left: 950px;
+  margin-bottom: 50px;
+  padding-top: 0 !important;
+}
+
+.my {
+  margin-right: 250px;
+}
+
 .img-work {
   width: 50%;
   height: 50%;
@@ -267,7 +288,7 @@ h2 {
 }
 
 .bloc-infos-work h2 {
-  font-family: "BespokeStencil-Variable";
+  font-family: "KENOKY Light";
   font-size: 5rem;
   text-align: start;
 }
@@ -297,12 +318,25 @@ h2 {
   .social {
     width: 133%;
     margin: 3vh auto;
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 
   .social a {
     width: 100%;
   }
+
+  .img-work {
+    top: 9%;
+    width: 100%;
+    left: 0%;
+  }
+
+  /* .container--horizontal,
+  .container--works {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+  } */
 }
 
 @media (max-width: 576px) {
@@ -342,5 +376,34 @@ h2 {
     margin-left: 15%;
     flex-direction: row;
     padding: 0;
+  }
+}
+
+@media (max-width: 405px) {
+  .nav-bar h4,
+  .right {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .nav-bar {
+    width: 68%;
+  }
+
+  .right {
+    top: 3vh;
+    left: 33vh;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+
+  .social a {
+    font-size: 4rem;
+    padding: 15px;
   }
 }
