@@ -68,7 +68,7 @@ gsap.to(".bloc-infos-work", {
     scrub: true,
     markers: false,
   },
-  x: 500,
+  x: -500,
 });
 
 gsap.to(".ml-650", {
@@ -77,7 +77,7 @@ gsap.to(".ml-650", {
     start: "top-=50%",
     end: "middle-=15%",
     scrub: true,
-    markers: true,
+    markers: false,
   },
   x: -810,
 });
