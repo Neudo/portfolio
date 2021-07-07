@@ -1,3 +1,19 @@
+// loader
+window.addEventListener("load", loader);
+
+function loader() {
+  const TLLOAD = gsap.timeline();
+
+  TLLOAD.to(".loader2", {
+    height: 0,
+    // width: 0,
+    duration: 1.5,
+    ease: "power4",
+  }).add(() => {
+    document.querySelector(".loader2").style.display = "none";
+  });
+}
+
 // changement de couleur contact au scroll
 const contact = document.querySelector(".right a");
 

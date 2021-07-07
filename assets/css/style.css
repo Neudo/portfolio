@@ -301,6 +301,17 @@ h2 {
   padding-top: 20px;
 }
 
+.loader2 {
+  background: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* .container--presentation {
+  opacity: 0;
+} */
+
 @media (max-width: 1025px) {
   .right {
     left: 76vw;
